@@ -15590,4 +15590,10 @@
     <!-- Search keywords for Human interface device access setting -->
     <string name="keywords_access_hid">hid, human, access, device</string>
     <!-- Access HID end -->
+    <!-- Super permissions -->
+    <string name="super_permission_title">Super permissions</string>
+    <string name="super_permission_summary">Allow unrestricted permissions and app operations</string>
+    <string name="super_permission_warning_title">Allow Super permissions for <xliff:g id="app_name" example="Example App">%1$s</xliff:g>?</string>
+    <string name="super_permission_warning_message">This app will be able to bypass Android permission and app operation restrictions. Only allow this for an app you completely trust.</string>
+    <string name="super_permission_allow">Allow unrestricted access</string>
 </resources>

@@ -59,6 +59,12 @@
         settings:summaryLineCount="1"
         settings:controller="com.android.settings.applications.appinfo.AppPermissionPreferenceController" />
 
+    <SwitchPreferenceCompat
+        android:key="super_permission"
+        android:title="@string/super_permission_title"
+        android:summary="@string/super_permission_summary"
+        settings:controller="com.android.settings.applications.appinfo.SuperPermissionPreferenceController" />
+
     <Preference
         android:key="manage_target_app_function_access_settings"
         android:title="@string/manage_target_app_function_access_settings_title"
