@@ -64,7 +64,7 @@ fun SuperPermissionPreference(app: ApplicationInfo) {
                     context.getString(R.string.super_permission_summary)
                 }
                 override val checked = { isChecked.value }
-                override val onCheckedChange = { enabled ->
+                override val onCheckedChange: (Boolean) -> Unit = { enabled ->
                     if (enabled) confirmDialog.open() else presenter.setEnabled(false)
                 }
             }
