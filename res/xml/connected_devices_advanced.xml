@@ -64,6 +64,15 @@
         settings:controller="com.android.settings.wfd.WifiDisplayPreferenceController"
         settings:keywords="@string/keywords_wifi_display_settings" />
 
+    <Preference
+        android:icon="@drawable/ic_cast_24dp"
+        android:key="cast_receiver_settings"
+        android:order="-6"
+        android:summary="@string/cast_receiver_settings_summary"
+        android:title="@string/cast_receiver_settings_title"
+        settings:controller="com.android.settings.connecteddevice.CastReceiverPreferenceController"
+        settings:keywords="@string/keywords_cast_receiver_settings" />
+
     <com.android.settingslib.RestrictedPreference
         android:fragment="com.android.settings.connecteddevice.threadnetwork.ThreadNetworkFragment"
         android:key="thread_network_settings"
