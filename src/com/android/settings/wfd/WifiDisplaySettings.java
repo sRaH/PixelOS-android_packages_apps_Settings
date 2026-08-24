@@ -237,7 +237,8 @@ public final class WifiDisplaySettings extends SettingsPreferenceFragment implem
     public static final String AVAILABILITY_DESCRIPTION = "The device must have a display, a wifi P2P service, and must support the wifi direct feature.";
 
     public static boolean isAvailable(Context context) {
-        return context.getSystemService(Context.DISPLAY_SERVICE) != null
+        return context.getResources().getBoolean(R.bool.config_show_cast_sender)
+                && context.getSystemService(Context.DISPLAY_SERVICE) != null
                 && context.getPackageManager().hasSystemFeature(PackageManager.FEATURE_WIFI_DIRECT)
                 && context.getSystemService(Context.WIFI_P2P_SERVICE) != null;
     }
