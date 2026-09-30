@@ -110,11 +110,11 @@
             settings:controller="com.android.settings.accessibility.TextReadingFragmentForDisplaySettingsController"/>
 
         <Preference
-            android:key="icon_manager"
-            android:title="@string/icon_manager_title"
-            android:summary="@string/icon_manager_summary">
-            <intent android:action="com.android.settings.action.STATUS_BAR_TUNER" />
-        </Preference>
+            android:key="gesture_system_navigation_input_summary"
+            android:title="@string/system_navigation_title"
+            android:fragment="com.android.settings.gestures.SystemNavigationGestureSettings"
+            settings:controller="com.android.settings.gestures.SystemNavigationPreferenceController"/>
+
     </PreferenceCategory>
 
     <PreferenceCategory
